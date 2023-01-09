@@ -7,11 +7,13 @@ const Post = ({
   content,
   author,
   avatar,
+  createdAt,
 }: {
   title: string;
   content: string;
   author: string;
   avatar: string;
+  createdAt: string;
 }) => {
   return (
     <div
@@ -67,6 +69,12 @@ const Post = ({
             }}
           >{author}</p>
             </div>
+        <p
+          style={{
+            fontSize: '12px',
+            margin: '0',
+          }}
+        >{createdAt}</p>
         </div>
     </div>
   )
@@ -90,30 +98,35 @@ function App() {
       content={PostsData[0].content}
       author={UsersData[0].name}
       avatar={UsersData[0].avatar_url}
+      createdAt={PostsData[0].created_at.toString()}
       />
     <Post
       title={PostsData[1].title}
       content={PostsData[1].content}
       author={UsersData[1].name}
       avatar={UsersData[1].avatar_url}
+      createdAt={PostsData[1].created_at.toString()}
       />
     <Post
       title={PostsData[2].title}
       content={PostsData[2].content}
       author={UsersData[2].name}
       avatar={UsersData[2].avatar_url}
+      createdAt={PostsData[2].created_at.toString()}
       />
     <Post
       title={PostsData[3].title}
       content={PostsData[3].content}
       author={UsersData[3].name}
       avatar={UsersData[3].avatar_url}
+      createdAt={PostsData[3].created_at.toString()}
       />
           <Post
       title={PostsData[4].title}
       content={PostsData[4].content}
       author={UsersData[4].name}
       avatar={UsersData[4].avatar_url}
+      createdAt={PostsData[4].created_at.toString()}
       />
   </div>
   );

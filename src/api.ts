@@ -21,7 +21,6 @@ export function getUsers() {
 export function getPosts() {
   return new Promise((resolve, reject) => {
     const random = Math.random();
-
     fetch(`${API_URL}/posts`).then((res) => {
       if (random < 0.1) {
         reject("Failed to fetch posts");
