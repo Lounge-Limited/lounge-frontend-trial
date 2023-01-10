@@ -26,9 +26,9 @@ The server contains 500 users in the database and 5000 posts so think very caref
 
 ### Running the Local JSON Server
 
-1. You can start the local `json-server` by running the command `json-server --watch db.json`
+1. You can start the local `json-server` by running the command `npx json-server --watch db.json`
 
-The JSON server will now be running at http://localhost:3004/ and you can make requests to it to retrieve the data for the posts and users.
+The JSON server will now be running at `http://localhost:3004/` and you can make requests to it to retrieve the data for the posts and users.
  
 
 ## Interview Marking Criteria
