@@ -1,7 +1,6 @@
 import React from 'react';
 import { PostsData, UsersData } from './data';
 
-
 const Post = ({
   title,
   content,
